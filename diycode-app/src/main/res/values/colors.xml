@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b7fd4</color>
+    <color name="colorPrimaryDark">#2262b3</color>
+    <color name="colorAccent">#3b7fd4</color>
+    <color name="d8">#d8d8d8</color>
+
+
+    <color name="diy_red">#DB3937</color>
+    <color name="diy_red2">#cc6f6e</color>
+    <color name="diy_gray">#C8C8CE</color>
+    <color name="diy_gray2">#999999</color>
+    <color name="diy_black">#4d4d4d</color>
+    <color name="diy_black2">#000000</color>
+    <color name="diy_white">#ffffff</color>
+    <color name="diy_white_bg">#F0F0F0</color>
+
+    <color name="pressed">#e6e6e6</color>
+
+    <color name="translucent">#00000000</color>
+    <!--白色透明度-->
+    <color name="translucent_white_05">#f2ffffff</color>
+    <color name="translucent_white_10">#e6ffffff</color>
+    <color name="translucent_white_15">#d9ffffff</color>
+    <color name="translucent_white_20">#ccffffff</color>
+    <color name="translucent_white_25">#bfffffff</color>
+    <color name="translucent_white_30">#b3ffffff</color>
+    <color name="translucent_white_35">#a6ffffff</color>
+    <color name="translucent_white_40">#99ffffff</color>
+    <color name="translucent_white_45">#8cffffff</color>
+    <color name="translucent_white_50">#80ffffff</color>
+    <color name="translucent_white_55">#73ffffff</color>
+    <color name="translucent_white_60">#66ffffff</color>
+    <color name="translucent_white_65">#59ffffff</color>
+    <color name="translucent_white_70">#4dffffff</color>
+    <color name="translucent_white_75">#40ffffff</color>
+    <color name="translucent_white_80">#33ffffff</color>
+    <color name="translucent_white_90">#26ffffff</color>
+    <color name="translucent_white_95">#0dffffff</color>
+
+    <!--黑色透明度-->
+    <color name="translucent_black_05">#f2000000</color>
+    <color name="translucent_black_10">#e6000000</color>
+    <color name="translucent_black_15">#d9000000</color>
+    <color name="translucent_black_20">#cc000000</color>
+    <color name="translucent_black_25">#bf000000</color>
+    <color name="translucent_black_30">#b3000000</color>
+    <color name="translucent_black_35">#a6000000</color>
+    <color name="translucent_black_40">#99000000</color>
+    <color name="translucent_black_45">#8c000000</color>
+    <color name="translucent_black_50">#80000000</color>
+    <color name="translucent_black_55">#73000000</color>
+    <color name="translucent_black_60">#66000000</color>
+    <color name="translucent_black_65">#59000000</color>
+    <color name="translucent_black_70">#4d000000</color>
+    <color name="translucent_black_75">#40000000</color>
+    <color name="translucent_black_80">#33000000</color>
+    <color name="translucent_black_90">#26000000</color>
+    <color name="translucent_black_95">#0d000000</color>
+
+    <color name="c1">#FFDE93</color>
+    <color name="c2">#FFD678</color>
+    <color name="c3">#FFD25A</color>
+    <color name="c4">#CC3A6C</color>
+    <color name="c5">#CC169F</color>
+</resources>

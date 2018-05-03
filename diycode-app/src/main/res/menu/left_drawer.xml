@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/group1">
+        <item android:title="用户设置">
+            <menu>
+                <item
+                    android:id="@+id/nav_mytiezi"
+                    android:icon="@mipmap/tiezi"
+                    android:title="我的帖子" />
+
+                <item
+                    android:id="@+id/nav_myshoucang"
+                    android:icon="@mipmap/shoucang"
+                    android:title="我的收藏" />
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:id="@+id/group2">
+        <item android:title="软件设置">
+            <menu>
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@mipmap/about"
+                    android:title="关于软件" />
+
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@mipmap/shezhi"
+                    android:title="软件设置" />
+            </menu>
+        </item>
+    </group>
+</menu>
