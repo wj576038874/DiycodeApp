@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.callback.ItemDragAndSwipeCallback;
@@ -28,8 +27,8 @@ import com.wenjie.diycode.R;
 import com.wenjie.diycode.adapter.NewTopicAdapter;
 import com.wenjie.diycode.mvp.presenter.topic.TopicPresenter;
 import com.wenjie.diycode.mvp.view.login.UserTopicActivity;
-import com.wenjie.diycode.utils.DividerItemDecoration;
 import com.wenjie.diycode.utils.ToastUtils;
+import com.wenjie.diycode.widget.DividerItemDecoration;
 
 import java.util.List;
 
@@ -57,7 +56,7 @@ public class NewTopicFragment extends Fragment implements ITopicView, OnRefreshL
         progressBar = (ProgressBar) view.findViewById(R.id.loading_progress);
         recyclerView = (RecyclerView) view.findViewById(R.id.topic_recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL));
+        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL,R.drawable.divider_bg));
         ((MainActivity) getActivity()).setOnFabClickLitener(this);
 //        loadingImageView = (LoadingImageView) view.findViewById(R.id.loadingiv);
 //        loadingImageView.setMaskOrientation(1);
