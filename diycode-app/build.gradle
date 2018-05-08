@@ -45,4 +45,5 @@ dependencies {
     compile 'org.sufficientlysecure:html-textview:3.4'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.33'
     testCompile 'junit:junit:4.12'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
 }
