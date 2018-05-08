@@ -1,10 +1,12 @@
 package com.wenjie.diycode.mvp.view.topic;
 
 import android.content.Intent;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.callback.ItemDragAndSwipeCallback;
+import com.chad.library.adapter.base.listener.OnItemDragListener;
+import com.chad.library.adapter.base.listener.OnItemSwipeListener;
 import com.gcssloop.diycode_sdk.api.topic.bean.Topic;
 import com.gcssloop.diycode_sdk.api.user.bean.User;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -123,50 +128,50 @@ public class NewTopicFragment extends Fragment implements ITopicView, OnRefreshL
         /**
          * 滑动 和 拖拽
          */
-//        ItemDragAndSwipeCallback itemDragAndSwipeCallback = new ItemDragAndSwipeCallback(topicAdapter);
-//        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(itemDragAndSwipeCallback);
-//        itemTouchHelper.attachToRecyclerView(recyclerView);
-//
-//        topicAdapter.enableDragItem(itemTouchHelper , R.id.title , true);
-//        topicAdapter.setOnItemDragListener(new OnItemDragListener() {
-//            @Override
-//            public void onItemDragStart(RecyclerView.ViewHolder viewHolder, int pos) {
-//
-//            }
-//
-//            @Override
-//            public void onItemDragMoving(RecyclerView.ViewHolder source, int from, RecyclerView.ViewHolder target, int to) {
-//
-//            }
-//
-//            @Override
-//            public void onItemDragEnd(RecyclerView.ViewHolder viewHolder, int pos) {
-//
-//            }
-//        });
-//
-//        topicAdapter.enableSwipeItem();
-//        topicAdapter.setOnItemSwipeListener(new OnItemSwipeListener() {
-//            @Override
-//            public void onItemSwipeStart(RecyclerView.ViewHolder viewHolder, int pos) {
-//                ToastUtils.showToast(getActivity(),  "onItemSwipeStart");
-//            }
-//
-//            @Override
-//            public void clearView(RecyclerView.ViewHolder viewHolder, int pos) {
-//                ToastUtils.showToast(getActivity(),  "clearView");
-//            }
-//
-//            @Override
-//            public void onItemSwiped(RecyclerView.ViewHolder viewHolder, int pos) {
-//                ToastUtils.showToast(getActivity(),  "onItemSwiped");
-//            }
-//
-//            @Override
-//            public void onItemSwipeMoving(Canvas canvas, RecyclerView.ViewHolder viewHolder, float dX, float dY, boolean isCurrentlyActive) {
-//                ToastUtils.showToast(getActivity(),  "onItemSwipeMoving");
-//            }
-//        });
+        ItemDragAndSwipeCallback itemDragAndSwipeCallback = new ItemDragAndSwipeCallback(topicAdapter);
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(itemDragAndSwipeCallback);
+        itemTouchHelper.attachToRecyclerView(recyclerView);
+
+        topicAdapter.enableDragItem(itemTouchHelper , R.id.title , true);
+        topicAdapter.setOnItemDragListener(new OnItemDragListener() {
+            @Override
+            public void onItemDragStart(RecyclerView.ViewHolder viewHolder, int pos) {
+
+            }
+
+            @Override
+            public void onItemDragMoving(RecyclerView.ViewHolder source, int from, RecyclerView.ViewHolder target, int to) {
+
+            }
+
+            @Override
+            public void onItemDragEnd(RecyclerView.ViewHolder viewHolder, int pos) {
+
+            }
+        });
+
+        topicAdapter.enableSwipeItem();
+        topicAdapter.setOnItemSwipeListener(new OnItemSwipeListener() {
+            @Override
+            public void onItemSwipeStart(RecyclerView.ViewHolder viewHolder, int pos) {
+                ToastUtils.showToast(getActivity(),  "onItemSwipeStart");
+            }
+
+            @Override
+            public void clearView(RecyclerView.ViewHolder viewHolder, int pos) {
+                ToastUtils.showToast(getActivity(),  "clearView");
+            }
+
+            @Override
+            public void onItemSwiped(RecyclerView.ViewHolder viewHolder, int pos) {
+                ToastUtils.showToast(getActivity(),  "onItemSwiped");
+            }
+
+            @Override
+            public void onItemSwipeMoving(Canvas canvas, RecyclerView.ViewHolder viewHolder, float dX, float dY, boolean isCurrentlyActive) {
+                ToastUtils.showToast(getActivity(),  "onItemSwipeMoving");
+            }
+        });
 
     }
 
