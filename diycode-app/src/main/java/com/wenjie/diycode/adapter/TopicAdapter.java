@@ -81,6 +81,7 @@ public class TopicAdapter extends RecyclerView.Adapter<TopicAdapter.CustomeHolde
                 onItemChildClickListener.onItemChildClick(TopicAdapter.this, view, customeHolder.getLayoutPosition());
             }
         });
+
 //        customeHolder.like.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
