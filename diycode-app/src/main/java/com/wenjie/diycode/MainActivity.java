@@ -31,6 +31,7 @@ import com.wenjie.diycode.mvp.view.login.MyTopicActivity;
 import com.wenjie.diycode.mvp.view.project.ProjectFragment;
 import com.wenjie.diycode.mvp.view.sites.NewSitesFragment;
 import com.wenjie.diycode.mvp.view.topic.NewTopicFragment;
+import com.wenjie.diycode.mvp.view.topic.TopicFragment;
 import com.wenjie.diycode.utils.MenuUtil;
 import com.wenjie.diycode.utils.PreferenceUtils;
 import com.wenjie.diycode.utils.ToastUtils;
@@ -105,8 +106,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mTabLayout.addTab(mTabLayout.newTab().setText("酷站"));
 
         fragmentList = new ArrayList<>();
-//        fragmentList.add(new TopicFragment());
-        fragmentList.add(new NewTopicFragment());
+        fragmentList.add(new TopicFragment());
+//        fragmentList.add(new NewTopicFragment());
         fragmentList.add(new ProjectFragment());
         fragmentList.add(new NewSitesFragment());
 //        fragmentList.add(new SitesFragment());
@@ -244,6 +245,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            startActivity(new Intent(MainActivity.this, SwipeMenuDelActivity.class));
             return true;
         } else if (id == R.id.action_notification) {
             return true;
