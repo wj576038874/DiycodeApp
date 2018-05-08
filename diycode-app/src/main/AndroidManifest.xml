@@ -30,7 +30,8 @@
         <activity android:name=".mvp.view.WebViewActivity" />
         <activity android:name=".mvp.view.topic.TopicDescActivity" />
         <activity android:name=".mvp.view.login.UserTopicActivity" />
-        <activity android:name=".mvp.view.login.MyTopicActivity"></activity>
+        <activity android:name=".mvp.view.login.MyTopicActivity" />
+        <activity android:name=".SwipeMenuDelActivity"></activity>
     </application>
 
 </manifest>
