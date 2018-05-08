@@ -1,5 +1,6 @@
 package com.wenjie.diycode.adapter;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -20,7 +21,7 @@ import com.wenjie.diycode.utils.TimeUtil;
 
 import java.util.List;
 
-import xyz.hanks.library.SmallBang;
+//import xyz.hanks.library.SmallBang;
 
 /**
  * @ProjectName: StudyDemo
@@ -36,17 +37,16 @@ public class TopicAdapter extends RecyclerView.Adapter<TopicAdapter.CustomeHolde
     private Context context;
     private List<Topic> datas;
     private RequestOptions options;
-    private SmallBang mSmallBang;
+//    private SmallBang mSmallBang;
     private OnItemChildClickListener onItemChildClickListener;
     private OnItemClickListener onItemClickListener;
 
     public TopicAdapter(Context context, List<Topic> datas) {
         this.context = context;
         this.datas = datas;
-        options = new RequestOptions();
-        options.placeholder(R.mipmap.ic_launcher).error(R.mipmap.failure);
-        mSmallBang = SmallBang.attach2Window((Activity) context);
-        mSmallBang.setColors(new int[]{ContextCompat.getColor(context, R.color.c1), ContextCompat.getColor(context, R.color.c5), ContextCompat.getColor(context, R.color.colorPrimaryDark), ContextCompat.getColor(context, R.color.c3)});
+        options = new RequestOptions().placeholder(R.mipmap.ic_launcher).error(R.mipmap.failure);
+//        mSmallBang = SmallBang.attach2Window((Activity) context);
+//        mSmallBang.setColors(new int[]{ContextCompat.getColor(context, R.color.c1), ContextCompat.getColor(context, R.color.c5), ContextCompat.getColor(context, R.color.colorPrimaryDark), ContextCompat.getColor(context, R.color.c3)});
     }
 
     @Override
