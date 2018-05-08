@@ -621,7 +621,7 @@ public class SlidingMenu extends RelativeLayout {
      * @return The margin on the right of the screen that the behind view scrolls to
      */
     public int getBehindOffset() {
-        return ((RelativeLayout.LayoutParams) mViewBehind.getLayoutParams()).rightMargin;
+        return ((LayoutParams) mViewBehind.getLayoutParams()).rightMargin;
     }
 
     /**
@@ -1001,8 +1001,8 @@ public class SlidingMenu extends RelativeLayout {
             out.writeInt(mItem);
         }
 
-        public static final Parcelable.Creator<SavedState> CREATOR =
-                new Parcelable.Creator<SavedState>() {
+        public static final Creator<SavedState> CREATOR =
+                new Creator<SavedState>() {
                     public SavedState createFromParcel(Parcel in) {
                         return new SavedState(in);
                     }

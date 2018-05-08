@@ -15,6 +15,7 @@ import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.wenjie.diycode.Main2Activity;
 import com.wenjie.diycode.MainActivity;
 import com.wenjie.diycode.R;
 import com.wenjie.diycode.adapter.TopicAdapter;
@@ -25,7 +26,7 @@ import com.wenjie.diycode.utils.DividerItemDecoration;
 import java.util.List;
 
 
-public class TopicFragment extends Fragment implements ITopicView, OnRefreshListener, OnLoadmoreListener, MainActivity.OnFabClickLitener {
+public class TopicFragment extends Fragment implements ITopicView, OnRefreshListener, OnLoadmoreListener, Main2Activity.OnFabClickLitener {
 
     private RecyclerView recyclerView;
     private TopicAdapter topicAdapter;
@@ -49,7 +50,7 @@ public class TopicFragment extends Fragment implements ITopicView, OnRefreshList
         recyclerView = (RecyclerView) view.findViewById(R.id.topic_recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL));
-        ((MainActivity) getActivity()).setOnFabClickLitener(this);
+        ((Main2Activity) getActivity()).setOnFabClickLitener(this);
         topicPresenter.getTopicsList();
         isInit = true;
         return view;
@@ -59,7 +60,7 @@ public class TopicFragment extends Fragment implements ITopicView, OnRefreshList
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser && isInit) {
-            ((MainActivity) getActivity()).setOnFabClickLitener(this);
+            ((Main2Activity) getActivity()).setOnFabClickLitener(this);
         }
     }
 

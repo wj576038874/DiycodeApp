@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DiycodeApp.iml" filepath="$PROJECT_DIR$/DiycodeApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diycode-app/diycode-app.iml" filepath="$PROJECT_DIR$/diycode-app/diycode-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diycode-sdk/diycode-sdk.iml" filepath="$PROJECT_DIR$/diycode-sdk/diycode-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingmenu/slidingmenu.iml" filepath="$PROJECT_DIR$/slidingmenu/slidingmenu.iml" />
+    </modules>
+  </component>
+</project>

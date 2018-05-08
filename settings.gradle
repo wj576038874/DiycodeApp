@@ -1,1 +1,1 @@
-include ':diycode-app', ':diycode-sdk', ':SlidingMenu-library'
+include ':diycode-app', ':diycode-sdk', ':slidingmenu'
